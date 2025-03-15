@@ -1,13 +1,17 @@
 import './App.css';
 
-function App() {
-  function setName(name){
-      return <h1>Hello {name}</h1>
-  }
+function App(props) {
+
   return (
     <div className="App">
       <h1>mohamed sherif </h1>
-      <p>{setName("Mohamed")}</p>
+    { props?   <p>Welcome {props.name}</p>:<p>Welcome Gest</p>}
+      
+                
+
+      
+      
+
     </div>
   );
 }
